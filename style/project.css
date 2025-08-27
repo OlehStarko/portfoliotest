@@ -591,10 +591,12 @@ margin-left: 24px;
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff; 
+    height: 140px;
 }
 @media screen and (min-width: 700px) {
     .dataLogoAnim {
          width: 30%;
+         height:100%;
         
     }
 }
