@@ -1,0 +1,155 @@
+body{
+    background-color: #ffffff;
+    color: #171716;
+    margin: 0;
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    height: 100%
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #ffffff;
+    color: #171716;
+    margin: 0;
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #ffffff;
+    color: #171716;
+    margin: 0;
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    height: 100%
+  }
+}
+p{
+    font-size: 16px;
+    margin: 0px;
+}
+.greyText{
+    color: #AEAA9F;
+}
+main{
+    height: 100vh;
+    padding: 20px; /* 20px top and 20px bottom padding */
+    box-sizing: border-box; /* Padding included within the 100vh height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+main{
+    height: 100vh;
+    padding: 40px; /* 20px top and 20px bottom padding */
+    box-sizing: border-box; /* Padding included within the 100vh height */
+}
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    animation-name: hederAnimation;
+    animation-duration: 2s;
+    opacity: 1;
+}
+@keyframes hederAnimation {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+nav a{
+    font-size: 16px;
+    color:#171716;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbarlink {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+.navbarlink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #171716;
+  transition: transform 0.5s ease-out;
+}
+
+.navbarlink:hover::after {
+  transform: scaleX(1);
+}
+
+.navbarlink.left::after {
+  transform-origin: bottom right;
+}
+
+.navbarlink.left:hover::after {
+  transform-origin: bottom left;
+}
+
+.centerSection{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    animation-name: enterSectionAnimation;
+    animation-duration: 2s;
+    opacity: 1;
+}
+@keyframes enterSectionAnimation {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+@media screen and (min-width: 768px) {
+.centerSection{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+}
+.centerSection a{ 
+    font-size: 46px;
+    margin: 0;
+    text-decoration: none;
+    color: #AEAA9F;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  
+}
+
+.centerSection a:hover{ color: #171716; transform: scale(1.05); }
+
+@media screen and (min-width: 500px) {
+.centerSection a{ font-size: 80px;
+    margin: 0;
+    text-decoration: none;
+
+    font-weight: 400;
+}
+}
+@media screen and (min-width: 768px) {
+.centerSection a{ font-size: 100px;
+    margin: 0;
+    text-decoration: none;
+    
+    font-weight: 400;
+}
+}
+.bottomSection{
+    display: flex;
+    flex-direction: column;
+}
+.tel a[href^="tel"] {
+  color:#5A5757;          
+  text-decoration: none;
+  font-weight: normal;
+}
